@@ -1,32 +1,160 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+main {
+    font-size: calc(10px + 1vmin);
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main a {
+    color: #50aafb;
+    text-decoration: none;
+}
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#services > * {
+    border: solid 1px darkgray;
+    margin: .5em;
+    list-style: none;
+    padding: .5em;
+    max-width: 35%;
+    min-width: 20%;
+    overflow: hidden;
+}
+
+#services > * > * {
+    display: block;
+}
+
+#services > * > div.tags > * {
+    margin: .1em;
+    background-color: lightgray;
+    border: solid 1px darkgray;
+    padding: 0 .1em;
+    min-width: 10%;
+    font-size: calc(10px + .7vmin);
+}
+
+#services > * > div.tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.error {
+    color: darkred;
+}
+
+.input-container > * {
+    display: block;
+    margin: auto;
+}
+
+.input-container datalist {
+    display: none;
+}
+
+#search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: .5em 0;
+}
+
+#search > * {
+    margin: 0 2em;
+}
+
+#search label.main {
+    padding: .3em;
+    font-weight: bold;
+}
+
+.multi-search .searches {
+    margin-bottom: .5em;
+}
+
+.multi-search .searches span {
+    border: solid 1px darkgray;
+    background: lightgray;
+}
+
+.multi-search .searches button {
+    border: none;
+    background: inherit;
+    padding: 0 .3em;
+}
+
+.collapsed-button {
+    border: none;
+    background: inherit;
+    padding: 0;
+    margin: 0;
+    min-width: 50%;
+}
+
+.collapsed-button > span {
+    font-size: 150%;
+}
+
+.collapsed-button > * {
+    display: inline;
+}
+
+.collapsed {
+    display: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    #services > * {
+        border: solid 1px darkgray;
+        margin: .5em;
+        list-style: none;
+        padding: .5em;
+        max-width: 40%;
+        min-width: 25%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #services > * {
+        border: solid 1px darkgray;
+        margin: .5em;
+        list-style: none;
+        padding: .5em;
+        max-width: 80%;
+        overflow: hidden;
+        min-width: 50%;
+    }
 }

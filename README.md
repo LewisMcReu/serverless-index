@@ -1,3 +1,14 @@
+#Serverless Index
+
+A simple project to allow easy lookup of services from cloud providers such as AWS, Google, Microsoft and IBM.
+
+##Contribute
+I'm open to pull requests!
+The data.json file in the public folder contains the description of all cloud services for lookup.
+Feel free to expand it.
+
+##Developer info
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
